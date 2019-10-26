@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <!-- free feats -->
+	<element name="Additional Feats" type="Option" source="DM Houserules" id="ID_HOUSERULES_FREE_FEATS">
+		<description>
+			<p>Some DMs may grant a free feat for your characters. Check this if your DM does it.</p>
+		</description>
+		<sheet display="false" />
+        <setters>
+			<set name="short">Some DMs may grant a free feat for your characters. Check this if your DM does it.</set>
+			<set name="default">true</set>
+		</setters>
+        <rules>
+            <select type="Feat" name="Free Feat (Level 1)" level="1" />
+			<select type="Feat" name="Free Feat (Level 4)" level="4" />
+			<select type="Feat" name="Free Feat (Level 8)" level="8" />
+        </rules>
+	</element>
+    
+    <!-- feats -->
+    <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_HOUSERULES_FEAT_SPROUTED_WINGS">
+        <prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>([str:13])</requirements>
+		<description>
+            <p><i>Prerequisites: Strength 13 or higher</i></p>
+            <p>You must have dragon, angel or some other winged creatures blood within your veins because you've sprouted wings. You can now fly using your wings to travel in any direction, you gain the following benefits:</p>
+            <ul>
+                <li>Your Flying Speed becomes 30ft.</li>
+                <li>Your Dexterity decreases by 2.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your Flying Speed becomes 60ft., allowing you to fly in any direction. Your Dexterity decreases by 2.</description>
+        </sheet>
+        <rules>
+			<stat name="speed:fly" value="60" />
+            <stat name="dexterity" value="-2" />
+        </rules>
+    </element>
+    
+    <element name="Night's Sight" type="Feat" source="DM Houserules" id="ID_HOUSERULES_FEAT_NIGHTS_SIGHT">
+        <prerequisite>Wisdom 14 or higher</prerequisite>
+		<requirements>([wis:14])</requirements>
+		<description>
+            <p><i>Prerequisites: Wisdom 14 or higher</i></p>
+            <p>You have spent years in the dark training your eyes to see without the use of light, you gain the following benefit:</p>
+            <ul>
+                <li>You gain the ability to see in darkness up to 30ft.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have spent years in the dark training your eyes to see without the use of light, you gain the ability to see in darkness up to 30ft.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    
+    <element name="Technomancer" type="Feat" source="DM Houserules" id="ID_HOUSERULES_FEAT_TECHNOMANCER">
+        <prerequisite>Proficiency with Tinker's Tools</prerequisite>
+		<requirements>(ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS)</requirements>
+		<description>
+            <p><i>Prerequisites: Proficiency with Tinker's Tools</i></p>
+            <p>Having spent years tinkering with all sorts of technilogical tools and devices along with things of the arcane nature, you have gained the ability to create magically enchanced weapons and armor. You can add your Intelligence and Proficiency modifiers to any roll made with your Tinker's Tools when creating a weapon or armor. You must state to the DM whether you are making a weapon or armor along with a rough idea of what the item's enchantment should be. The DM sets a DC and has the final say as to how accurate your creation process was.</p>
+            <ul>
+                <li>Your Intelligence score becomes 19.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can add your Intelligence and Proficiency modifiers to any roll made with your Tinker's Tools when creating a weapon or armor.</description>
+        </sheet>
+        <rules>
+            <stat name="intelligence" value="19" bonus="base" />
+        </rules>
+    </element>
+    
+</elements>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	
+    <element name="DM Houserules" type="Source" source="DM Houserules" id="ID_HOUSERULES_SOURCE">
+		<description>
+			<![CDATA[<p>Some DMs may grant a free feat for your characters. Also includes additional feats.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">DMHR</set>
+			<set name="url">https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png</set>
+			<set name="image">https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png</set>
+			<set name="author" url="https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png">Andreal Vox</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+    
+</elements>

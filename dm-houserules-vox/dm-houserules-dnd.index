@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>DM Houserules</name>
+		<description>Some DMs may grant a free feat for your characters. Also includes additional feats.</description>
+		<author url="https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png">Andreal Vox</author>
+		<update version="0.1">
+			<file name="dm-houserules.index" url="https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png" />
+		</update>
+	</info>
+	<files>
+		<!-- misc -->
+		<file name="additional-feats.index" url="https://i.pinimg.com/originals/48/cb/53/48cb5349f515f6e59edc2a4de294f439.png" />
+	</files>
+</index>
