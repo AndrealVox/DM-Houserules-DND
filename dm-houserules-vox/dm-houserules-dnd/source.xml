@@ -11,12 +11,13 @@
 	
     <element name="DM Houserules" type="Source" source="DM Houserules" id="ID_DM_HOUSERULES_SOURCE">
 		<description>
-			<![CDATA[<p>Some DMs may grant a free feat for your characters. Also includes additional feats.</p>]]>
+			<![CDATA[<p>Includes additional feats along with the ability to grant a free feat for your characters at certain levels.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">DMHR</set>
 			<set name="url">https://github.com/AndrealVox/DM-Houserules-DND</set>
-			<set name="author" abbreviation="DMHR" url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</set>
+			<set name="image">https://cdn.discordapp.com/attachments/362716587142283265/638006847550259210/ANDREAL_VOX.jpg</set>
+			<set name="author" abbreviation="AV" url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
