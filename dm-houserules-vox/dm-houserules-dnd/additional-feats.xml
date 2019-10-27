@@ -5,7 +5,7 @@
 		<name>Additional Feats</name>
 		<description>Additional Feats Plus Free Feats</description>
 		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.2">
+		<update version="0.3">
 			<file name="additional-feats.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/additional-feats.xml" />
 		</update>
 	</info>
