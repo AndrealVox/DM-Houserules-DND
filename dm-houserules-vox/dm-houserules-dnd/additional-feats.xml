@@ -5,7 +5,7 @@
 		<name>Additional Feats</name>
 		<description>Additional Feats Plus Free Feats</description>
 		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.1">
+		<update version="0.2">
 			<file name="additional-feats.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/additional-feats.xml" />
 		</update>
 	</info>
@@ -33,18 +33,16 @@
 		<requirements>([str:13])</requirements>
 		<description>
             <p><i>Prerequisites: Strength 13 or higher</i></p>
-            <p>You must have dragon, angel or some other winged creatures blood within your veins because you've sprouted wings. You can now fly using your wings to travel in any direction, you gain the following benefits:</p>
+            <p>You must have dragon, angel or some other winged creatures blood within your veins because you've sprouted wings. You gain the ability to sprout a pair of wings from your back (feathered, bat-like, anything of your choice), gaining a flying speed of 30ft. You can create these wings as a bonus action on your turn. They remain indefinitely until you dismiss them as a bonus action on your turn.</p>
             <ul>
                 <li>Your Flying Speed becomes 30ft.</li>
-                <li>Your Dexterity decreases by 2.</li>
             </ul>
         </description>
         <sheet>
-            <description>Your Flying Speed becomes 60ft., allowing you to fly in any direction. Your Dexterity decreases by 2.</description>
+            <description>Your Flying Speed becomes 30ft., allowing you to fly in any direction.</description>
         </sheet>
         <rules>
-			<stat name="speed:fly" value="60" />
-            <stat name="dexterity" value="-2" />
+			<stat name="speed:fly" value="30" />
         </rules>
     </element>
     
