@@ -7,14 +7,14 @@
 		</update>
 	</info>
 	
-    <element name="DM Houserules" type="Source" source="Core" id="ID_DM_HOUSERULES_SOURCE">
+    <element name="DM Houserules" type="Source" source="DM Houserules" id="ID_DM_HOUSERULES_SOURCE">
 		<description>
 			<![CDATA[<p>Some DMs may grant a free feat for your characters. Also includes additional feats.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">DMHR</set>
 			<set name="url">https://github.com/AndrealVox/DM-Houserules-DND</set>
-			<set name="author" abbreviation="DMHR">Andreal Vox</set>
+			<set name="author" abbreviation="DMHR">Andreal_Vox</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
