@@ -2,6 +2,8 @@
 <elements>
 	
     <info>
+		<name>DM Houserules</name>
+		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
 		<update version="0.3">
 			<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/source.xml" />
 		</update>
@@ -14,7 +16,7 @@
 		<setters>
 			<set name="abbreviation">DMHR</set>
 			<set name="url">https://github.com/AndrealVox/DM-Houserules-DND</set>
-			<set name="author" abbreviation="DMHR">Andreal_Vox</set>
+			<set name="author" abbreviation="DMHR" url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>

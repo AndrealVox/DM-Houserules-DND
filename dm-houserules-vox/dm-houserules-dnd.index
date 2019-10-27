@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>DM Houserules</name>
 		<update version="0.3">
 			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd.index" />
 		</update>
