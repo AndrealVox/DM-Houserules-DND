@@ -47,13 +47,14 @@
     </element>
     
     <element name="Night's Sight" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_NIGHTS_SIGHT">
-        <prerequisite>Wisdom 14 or higher</prerequisite>
-		<requirements>([wis:14])</requirements>
+        <prerequisite>Proficiency with Perception</prerequisite>
+		<requirements>(ID_PROFICIENCY_SKILL_PERCEPTION)</requirements>
 		<description>
-            <p><i>Prerequisites: Wisdom 14 or higher</i></p>
+            <p><i>Prerequisites: Proficiency with Perception</i></p>
             <p>You have spent years in the dark training your eyes to see without the use of light, you gain the following benefit:</p>
             <ul>
                 <li>You gain the ability to see in darkness up to 30ft.</li>
+                <li>Your proficiency bonus is doubled for any Perception check you make.</li>
             </ul>
         </description>
         <sheet>
@@ -61,6 +62,7 @@
         </sheet>
         <rules>
             <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="perception:proficiency" value="proficiency" bonus="double" />
         </rules>
     </element>
     
