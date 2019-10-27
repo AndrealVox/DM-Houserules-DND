@@ -2,7 +2,7 @@
 <elements>
 	
     <info>
-		<update version="0.1">
+		<update version="0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/source.xml" />
 		</update>
 	</info>
