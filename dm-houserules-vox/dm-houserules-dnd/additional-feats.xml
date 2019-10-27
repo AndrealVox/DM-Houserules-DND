@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     
-    <!-- free feats -->
-	<element name="Additional Feats" type="Option" source="DM Houserules" id="ID_HOUSERULES_FREE_FEATS">
+    <info>
+		<name>Additional Feats</name>
+		<description>Additional Feats Plus Free Feats</description>
+		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
+		<update version="0.1">
+			<file name="additional-feats.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/additional-feats.xml" />
+		</update>
+	</info>
+	
+	<!-- free feats -->
+	<element name="Additional Feats" type="Option" source="DM Houserules" id="ID_DM_HOUSERULES_FREE_FEATS">
 		<description>
 			<p>Some DMs may grant a free feat for your characters. Check this if your DM does it.</p>
 		</description>
@@ -19,7 +28,7 @@
 	</element>
     
     <!-- feats -->
-    <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_HOUSERULES_FEAT_SPROUTED_WINGS">
+    <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_SPROUTED_WINGS">
         <prerequisite>Strength 13 or higher</prerequisite>
 		<requirements>([str:13])</requirements>
 		<description>
@@ -39,7 +48,7 @@
         </rules>
     </element>
     
-    <element name="Night's Sight" type="Feat" source="DM Houserules" id="ID_HOUSERULES_FEAT_NIGHTS_SIGHT">
+    <element name="Night's Sight" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_NIGHTS_SIGHT">
         <prerequisite>Wisdom 14 or higher</prerequisite>
 		<requirements>([wis:14])</requirements>
 		<description>
@@ -57,7 +66,7 @@
         </rules>
     </element>
     
-    <element name="Technomancer" type="Feat" source="DM Houserules" id="ID_HOUSERULES_FEAT_TECHNOMANCER">
+    <element name="Technomancer" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_TECHNOMANCER">
         <prerequisite>Proficiency with Tinker's Tools</prerequisite>
 		<requirements>(ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS)</requirements>
 		<description>

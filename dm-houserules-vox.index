@@ -2,10 +2,10 @@
 <index>
 	<info>
 		<update version="0.1">
-			<file name="dm-houserules.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules/master/dm-houserules.index" />
+			<file name="dm-houserules-vox.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox.index" />
 		</update>
 	</info>
 	<files>
-		<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-dnd.index" />		
+		<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd.index" />		
 	</files>
 </index>
