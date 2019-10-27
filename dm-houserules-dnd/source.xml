@@ -4,8 +4,8 @@
     <info>
 		<name>DM Houserules</name>
 		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.3">
-			<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/source.xml" />
+		<update version="0.4">
+			<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/source.xml" />
 		</update>
 	</info>
 	

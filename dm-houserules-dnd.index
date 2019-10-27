@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.3">
-			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox.index" />
+		<update version="0.4">
+			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd.index" />
 		</update>
 	</info>
 	<files>
 		<!-- source -->
-		<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/source.xml" />
 	
 		<!-- misc -->
-		<file name="additional-feats.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/additional-feats.xml" />
+		<file name="additional-feats.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
 	</files>
 </index>
