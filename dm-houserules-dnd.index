@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
 		<update version="0.3">
-			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd.index" />
+			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox.index" />
 		</update>
 	</info>
 	<files>
+		<!-- source -->
 		<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-vox/dm-houserules-dnd/source.xml" />
 	
 		<!-- misc -->
