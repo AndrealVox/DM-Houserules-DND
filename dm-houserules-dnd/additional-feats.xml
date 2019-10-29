@@ -2,28 +2,45 @@
 <elements>
     
     <info>
-		<name>Additional Feats</name>
-		<description>Additional Feats Plus Free Feats</description>
+		<name>Extra Options</name>
+		<description>Extra Options</description>
 		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.4">
+		<update version="0.5">
 			<file name="additional-feats.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
 		</update>
 	</info>
+    
+    <!-- appends -->
+    <append id="ID_WOTC_PHB_CLASS_CLERIC">
+        <rules>
+			<grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DIVINE_SENSE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <stat name="dexterity" value="3" />
+        </rules>
+    </append>
 	
-	<!-- free feats -->
-	<element name="Additional Feats" type="Option" source="DM Houserules" id="ID_DM_HOUSERULES_FREE_FEATS">
-		<description>
-			<p>Some DMs may grant a free feat for your characters. Check this if your DM does it.</p>
-		</description>
+    <append id="ID_RACE_DRAGONBORN">
+        <rules>
+            <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE" />
+			<grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        </rules>
+    </append>
+    
+	<!-- options -->
+	<element name="Extra Options" type="Option" source="DM Houserules" id="ID_DM_HOUSERULES_EXTRA_OPTION">
+		<description>Some DMs may allow the use of extra options. Check this if your DM does.</description>
 		<sheet display="false" />
         <setters>
-			<set name="short">Some DMs may grant a free feat for your characters. Check this if your DM does it.</set>
 			<set name="default">true</set>
 		</setters>
         <rules>
-            <select type="Feat" name="Free Feat (Level 1)" level="1" />
-			<select type="Feat" name="Free Feat (Level 4)" level="4" />
-			<select type="Feat" name="Free Feat (Level 8)" level="8" />
+            <select type="Feat" name="Free Feat (Level 5)" level="5" />
+			<select type="Feat" name="Free Feat (Level 10)" level="10" />
+			<select type="Feat" name="Free Feat (Level 15)" level="15" />
+			<select type="Feat" name="Free Feat (Level 20)" level="20" />
         </rules>
 	</element>
     
@@ -51,14 +68,14 @@
 		<requirements>(ID_PROFICIENCY_SKILL_PERCEPTION)</requirements>
 		<description>
             <p><i>Prerequisites: Proficiency with Perception</i></p>
-            <p>You have spent years in the dark training your eyes to see without the use of light, you gain the following benefit:</p>
+            <p>You have spent years in the dark training your eyes to see without the use of light, you gain the following benefits:</p>
             <ul>
-                <li>You gain the ability to see in darkness up to 30ft.</li>
+                <li>You gain the ability to see in darkness up to 60ft.</li>
                 <li>Your proficiency bonus is doubled for any Perception check you make.</li>
             </ul>
         </description>
         <sheet>
-            <description>You have spent years in the dark training your eyes to see without the use of light, you gain the ability to see in darkness up to 30ft.</description>
+            <description>You have spent years in the dark training your eyes to see without the use of light, you gain the ability to see in darkness up to 60ft.</description>
         </sheet>
         <rules>
             <grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -80,7 +97,59 @@
             <description>You can add your Intelligence and Proficiency modifiers to any roll made with your Tinker's Tools when creating a weapon or armor.</description>
         </sheet>
         <rules>
-            <stat name="intelligence" value="19" bonus="base" />
+            <stat name="intelligence:score:set" value="19" bonus="base" />
+        </rules>
+    </element>
+    
+    <!-- dragon racial traits -->
+    <element name="Dragons Fire" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE">
+        <description>
+            <p>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</p>
+        </description>
+        <sheet>
+            <description>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</description>
+        </sheet>
+        <rules />
+    </element>
+    
+    <element name="Dragon Senses" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE">
+        <description>
+            <p>At 1st level, your draconic bloodline has heightened your senses making you more alert to your surroundings and giving you an inate ability to see through people.</p>
+            <ul>
+                <li>You gain proficiency in Perception and Insight.</li>
+                <li>You gain the ability to see in darkness within 60ft.</li>
+            </ul>
+            <p>At 5th level, your senses have become more alert and are even more aware of those around you.</p>
+            <ul>
+                <li>Your proficiency bonus is doubled for any Perception or Insight check you make.</li>
+            </ul>
+        </description>        
+        <sheet display="false" />
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="perception:proficiency" value="proficiency" bonus="double" level="5" />
+            <stat name="insight:proficiency" value="proficiency" bonus="double" level="5" />
+        </rules>
+    </element>
+    
+    <!-- centaur racial traits -->
+    <element name="Divine Senses" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DIVINE_SENSE">
+        <description>
+            <p>At 1st level, your divine blood has heightened your senses making you one with nature and more alert to your surroundings.</p>
+            <ul>
+                <li>You gain proficiency in Perception and Nature.</li>
+                <li>You gain the ability to see in darkness within 60ft.</li>
+            </ul>
+            <p>At 5th level, your senses have become more alert and are even more attuned to the world around you.</p>
+            <ul>
+                <li>Your proficiency bonus is doubled for any Perception or Nature check you make.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="perception:proficiency" value="proficiency" bonus="double" level="5" />
+            <stat name="nature:proficiency" value="proficiency" bonus="double" level="5" />
         </rules>
     </element>
     
