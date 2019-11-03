@@ -11,5 +11,8 @@
 	
 		<!-- misc -->
 		<file name="additional-feats.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
+	
+		<!-- races -->
+		<file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
 	</files>
 </index>

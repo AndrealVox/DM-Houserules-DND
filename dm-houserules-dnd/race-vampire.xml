@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Vampire</name>
+        <description>Vampire</description>
+        <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
+		<update version="0.5">
+            <file name="race-vampire.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/unearthed-arcana/planeshift/zendikar/race-vampire.xml" />
+        </update>
+    </info>
+    
+    <element name="Vampire" type="Race" source="DM Houserules" id="ID_DM_HOUSERULES_RACE_VAMPIRE">
+        <description>
+            <p> Coming Soon... </p>
+            <h4>COMING SOON...</h4>
+            <p>Coming Soon...</p>
+            <p class="indent">Coming Soon...</p>
+            <p class="indent">Coming Soon...</p>
+            <h4>VAMPIRE TRAITS</h4>
+            <p>Your vampire character has the following traits.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength, Dexterity, Constitution and Wisdom scores increase by 2.</p>
+            <p class="indent"><b><i>Age. </i></b>Vampires don’t mature and age in the same way that other races do. Every living vampire is either a Blood Lord, infected by "The Father" in the distant reaches of the past, or was spawned by a bloodchief from a living human. Most vampires are thus very old in years.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Vampires have a strict hierarchy that incline them toward a lawful alignment. They may or may not become evil depending on how they chose to feed throughout their life.</p>
+            <p class="indent"><b><i>Size. </i></b>Vampire are about the same size and build as humans. Your size is Medium.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your swiftness grants you a base walking speed of 40 feet.</p>
+            <p class="indent"><b><i>Vampiric Resistance. </i></b>You have resistance to necrotic damage.</p>
+            <p class="indent"><b><i>Superior Darkvision.</i></b>Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Vampire and one extra language of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="2" />
+            <stat name="dexterity" value="2" />
+            <stat name="constitution" value="2" />
+            <stat name="wisdom" value="2" />
+            <stat name="innate speed" value="40" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE" />
+            <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_RESISTANCE" />
+        </rules>
+    </element>
+    
+    <element name="Extra Language" type="Racial Trait" source="DM Houserules" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
+		<description>
+			<p>You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Vampire)" supports="Starting" />
+		</rules>
+	</element>
+    
+    <element name="Vampiric Resistance" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_RESISTANCE">
+        <description>
+            <p>You have resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to necrotic damage.</description>
+        </sheet>
+        <rules>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+
+    <!-- Languages -->
+    <element name="Vampire" type="Language" source="DM Houserules" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE">
+        <description>
+            <p>The language of the Vampire race.</p>
+        </description>
+        <setters>
+            <set name="Speakers">Vampire</set>
+            <set name="Script">Vampire</set>
+            <set name="Exotic">true</set>
+        </setters>
+    </element>
+</elements>

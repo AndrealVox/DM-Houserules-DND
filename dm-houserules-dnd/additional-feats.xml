@@ -11,21 +11,14 @@
 	</info>
     
     <!-- appends -->
-    <append id="ID_WOTC_PHB_CLASS_CLERIC">
-        <rules>
-			<grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DIVINE_SENSE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
-            <stat name="dexterity" value="3" />
-        </rules>
-    </append>
-	
     <append id="ID_RACE_DRAGONBORN">
         <rules>
-            <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 			<grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE" />
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
         </rules>
     </append>
     
@@ -45,7 +38,7 @@
 	</element>
     
     <!-- feats -->
-    <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_SPROUTED_WINGS">
+    <!-- <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_SPROUTED_WINGS">
         <prerequisite>Strength 13 or higher</prerequisite>
 		<requirements>([str:13])</requirements>
 		<description>
@@ -99,10 +92,10 @@
         <rules>
             <stat name="intelligence:score:set" value="19" bonus="base" />
         </rules>
-    </element>
+    </element> -->
     
     <!-- dragon racial traits -->
-    <element name="Dragons Fire" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE">
+    <element name="Dragons Fire" type="Racial Trait" source="Player’s Handbook" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE">
         <description>
             <p>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</p>
         </description>
@@ -112,45 +105,15 @@
         <rules />
     </element>
     
-    <element name="Dragon Senses" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE">
+    <element name="Dragon Senses" type="Racial Trait" source="Player’s Handbook" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE">
         <description>
-            <p>At 1st level, your draconic bloodline has heightened your senses making you more alert to your surroundings and giving you an inate ability to see through people.</p>
+            <p>Your draconic bloodline has heightened your senses making you more alert to your surroundings and giving you an inate ability to talk to creatures.</p>
             <ul>
-                <li>You gain proficiency in Perception and Insight.</li>
-                <li>You gain the ability to see in darkness within 60ft.</li>
-            </ul>
-            <p>At 5th level, your senses have become more alert and are even more aware of those around you.</p>
-            <ul>
-                <li>Your proficiency bonus is doubled for any Perception or Insight check you make.</li>
+                <li>You gain proficiency in Insight, Perception and Persuasion.</li>
             </ul>
         </description>        
         <sheet display="false" />
-        <rules>
-            <grant type="Vision" id="ID_VISION_DARKVISION" />
-            <stat name="perception:proficiency" value="proficiency" bonus="double" level="5" />
-            <stat name="insight:proficiency" value="proficiency" bonus="double" level="5" />
-        </rules>
-    </element>
-    
-    <!-- centaur racial traits -->
-    <element name="Divine Senses" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DIVINE_SENSE">
-        <description>
-            <p>At 1st level, your divine blood has heightened your senses making you one with nature and more alert to your surroundings.</p>
-            <ul>
-                <li>You gain proficiency in Perception and Nature.</li>
-                <li>You gain the ability to see in darkness within 60ft.</li>
-            </ul>
-            <p>At 5th level, your senses have become more alert and are even more attuned to the world around you.</p>
-            <ul>
-                <li>Your proficiency bonus is doubled for any Perception or Nature check you make.</li>
-            </ul>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Vision" id="ID_VISION_DARKVISION" />
-            <stat name="perception:proficiency" value="proficiency" bonus="double" level="5" />
-            <stat name="nature:proficiency" value="proficiency" bonus="double" level="5" />
-        </rules>
+        <rules />
     </element>
     
 </elements>
