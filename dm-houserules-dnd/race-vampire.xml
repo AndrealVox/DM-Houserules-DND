@@ -1,79 +1,212 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Vampire</name>
-        <description>Vampire</description>
-        <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.5">
-            <file name="race-vampire.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/unearthed-arcana/planeshift/zendikar/race-vampire.xml" />
-        </update>
-    </info>
-    
-    <element name="Vampire" type="Race" source="DM Houserules" id="ID_DM_HOUSERULES_RACE_VAMPIRE">
-        <description>
-            <p> Coming Soon... </p>
-            <h4>COMING SOON...</h4>
-            <p>Coming Soon...</p>
-            <p class="indent">Coming Soon...</p>
-            <p class="indent">Coming Soon...</p>
-            <h4>VAMPIRE TRAITS</h4>
-            <p>Your vampire character has the following traits.</p>
-            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength, Dexterity, Constitution and Wisdom scores increase by 2.</p>
-            <p class="indent"><b><i>Age. </i></b>Vampires don’t mature and age in the same way that other races do. Every living vampire is either a Blood Lord, infected by "The Father" in the distant reaches of the past, or was spawned by a bloodchief from a living human. Most vampires are thus very old in years.</p>
-            <p class="indent"><b><i>Alignment. </i></b>Vampires have a strict hierarchy that incline them toward a lawful alignment. They may or may not become evil depending on how they chose to feed throughout their life.</p>
-            <p class="indent"><b><i>Size. </i></b>Vampire are about the same size and build as humans. Your size is Medium.</p>
-            <p class="indent"><b><i>Speed. </i></b>Your swiftness grants you a base walking speed of 40 feet.</p>
-            <p class="indent"><b><i>Vampiric Resistance. </i></b>You have resistance to necrotic damage.</p>
-            <p class="indent"><b><i>Superior Darkvision.</i></b>Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
-            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Vampire and one extra language of your choice.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="strength" value="2" />
-            <stat name="dexterity" value="2" />
-            <stat name="constitution" value="2" />
-            <stat name="wisdom" value="2" />
-            <stat name="innate speed" value="40" bonus="base" />
-            <grant type="Size" id="ID_SIZE_MEDIUM" />
-            <grant type="Language" id="ID_LANGUAGE_COMMON" />
-            <grant type="Language" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE" />
-            <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
-            <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_RESISTANCE" />
-        </rules>
-    </element>
-    
-    <element name="Extra Language" type="Racial Trait" source="DM Houserules" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
-		<description>
-			<p>You can speak, read, and write one extra language of your choice.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Language" name="Language (Vampire)" supports="Starting" />
-		</rules>
-	</element>
-    
-    <element name="Vampiric Resistance" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_RESISTANCE">
-        <description>
-            <p>You have resistance to necrotic damage.</p>
-        </description>
-        <sheet>
-            <description>You have resistance to necrotic damage.</description>
-        </sheet>
-        <rules>
-		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-        </rules>
-    </element>
+   <info>
+      <name>Vampire</name>
+      <description>Vampire</description>
+      <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
+      <update version="0.7">
+         <file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
+      </update>
+   </info>
 
-    <!-- Languages -->
-    <element name="Vampire" type="Language" source="DM Houserules" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE">
-        <description>
-            <p>The language of the Vampire race.</p>
-        </description>
-        <setters>
-            <set name="Speakers">Vampire</set>
-            <set name="Script">Vampire</set>
-            <set name="Exotic">true</set>
-        </setters>
-    </element>
+   <element name="Vampire" type="Race" source="DM Houserules" id="ID_DM_HOUSERULES_RACE_VAMPIRE">
+      <description>
+         <p> Coming Soon... </p>
+         <h4>COMING SOON...</h4>
+         <p>Coming Soon...</p>
+         <p class="indent">Coming Soon...</p>
+         <p class="indent">Coming Soon...</p>
+         <h4>VAMPIRE TRAITS</h4>
+         <p>Your vampire character has the following traits.</p>
+         <p class="indent"><b><i>Ability Score Increase. </i></b>Like the Human you came from only stronger, your ability scores each increase by 2.</p>
+         <p class="indent"><b><i>Age. </i></b>Vampires don’t mature and age in the same way that other races do. Every living vampire is either a Blood Lord, infected by "The Father" in the distant reaches of the past, or was spawned by a bloodchief from a living human. Most vampires are thus very old in years.</p>
+         <p class="indent"><b><i>Alignment. </i></b>Vampires have a strict hierarchy that incline them toward a lawful alignment. They may or may not become evil depending on how they chose to feed throughout their life.</p>
+         <p class="indent"><b><i>Size. </i></b>Vampire are about the same size and build as humans. Your size is Medium.</p>
+         <p class="indent"><b><i>Speed. </i></b>Your swiftness grants you a base walking speed of 40 feet.</p>
+         <p class="indent"><b><i>Vampiric Resistance. </i></b>You have resistance to bludgeoning and necrotic damage.</p>
+         <p class="indent"><b><i>Superior Darkvision.</i></b>Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+         <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Vampire and one extra language of your choice.</p>
+         <p class="indent"><b><i>Proficiencies. </i></b>You are proficiency in Intimidation, Perception, Persuasion and Stealth.</p>
+      </description>
+      <sheet display="false" />
+      <setters>
+         <set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+         <set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+         <set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+         <set name="names-format">{{name}} {{surname}}</set>
+         <set name="height" modifier="2d10">5'3"</set>
+         <set name="weight" modifier="2d4">100 lb.</set>
+      </setters>
+      <rules>
+         <stat name="strength" value="2" />
+         <stat name="dexterity" value="2" />
+         <stat name="constitution" value="2" />
+         <stat name="intelligence" value="2" />
+         <stat name="wisdom" value="2" />
+         <stat name="charisma" value="2" />
+         <stat name="innate speed" value="40" bonus="base" />
+         <grant type="Size" id="ID_SIZE_MEDIUM" />
+         <grant type="Language" id="ID_LANGUAGE_COMMON" />
+         <grant type="Language" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE" />
+         <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE" />
+      </rules>
+   </element>
+
+   <!-- Vampiric Bloodline -->
+   <element name="Vampiric Bloodline" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE">
+      <description>
+         <p>You have a vampiric bloodline. Granting you a plethora of enhanced skills and abilities.</p>
+         <div element="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_SUPERIOR_BODY" />
+         <div element="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_MIST_SHAPE" />
+         <div element="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_WOLF_SHAPE" />
+         <div element="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_VAMPIRIC_RESISTANCE" />
+         <div element="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_UNNATURAL_CHARM" />
+      </description>
+      <sheet display="false" />
+      <rules>
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_SUPERIOR_BODY" supports="Vampiric Bloodline" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_MIST_SHAPE" supports="Vampiric Bloodline" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_WOLF_SHAPE" supports="Vampiric Bloodline" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_VAMPIRIC_RESISTANCE" supports="Vampiric Bloodline" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_UNNATURAL_CHARM" supports="Vampiric Bloodline" />
+      </rules>
+   </element>
+
+   <element name="Superior Body" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_SUPERIOR_BODY">
+      <supports>Vampiric Bloodline</supports>
+      <description>
+         <p>You can use your vampiric reflexes to dodge attacks and move with an unearthly grace and ease, gaining the following benefits: </p>
+         <ul>
+            <li>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+            <li>While you are wearing not armor, your Armor Class equals 12 + your Dexterity modifier.</li>
+         </ul>
+      </description>
+      <sheet alt="Superior Body">
+         <description>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. While you are wearing not armor, your Armor Class equals {{ac:unarmored-defense-vampire}}.</description>
+      </sheet>
+      <rules>
+         <stat name="ac:unarmored-defense-vampire:base" value="12" />
+         <stat name="ac:unarmored-defense-vampire:dexterity" value="dexterity:modifier" />
+
+         <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:base" />
+         <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:dexterity" />
+
+         <stat name="ac:calculation" value="ac:unarmored-defense-vampire" bonus="calculation" equipped="[armor:none]" alt="Superior Body (Vampire)" />
+      </rules>
+   </element>
+
+   <element name="Mist Shape" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_MIST_SHAPE">
+      <supports>Vampiric Bloodline</supports>
+      <description>
+         <p>You can transform into a cloud of foggy mist as a Bonus Action. You are weightless and have a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. You are immune to all nonmagical damage.</p>
+         <p>Once you use this feature, you must finish a short or long rest before you can use it again. At 5th level, you get 2 uses before needing a short rest. At 10th level, you get 3 uses before needing a short rest and the duration increases to 2 minutes. At 15th level, you get 4 uses before needing a short rest. At 20th level, you get 5 uses before needing a short rest and the duration increases to 4 minutes.</p>
+      </description>
+      <sheet alt="Mist Shape">
+         <description action="Bonus Action/1 Minute" usage="1/Short Rest" level="1">You have a flying speed of 20 feet. You are immune to all nonmagical damage.</description>
+         <description action="Bonus Action/1 Minute" usage="2/Short Rest" level="5">You have a flying speed of 20 feet. You are immune to all nonmagical damage.</description>
+         <description action="Bonus Action/2 Minutes" usage="3/Short Rest" level="10">You have a flying speed of 20 feet. You are immune to all nonmagical damage.</description>
+         <description action="Bonus Action/2 Minutes" usage="4/Short Rest" level="15">You have a flying speed of 20 feet. You are immune to all nonmagical damage.</description>
+         <description action="Bonus Action/4 Minutes" usage="5/Short Rest" level="20">You have a flying speed of 20 feet. You are immune to all nonmagical damage.</description>
+      </sheet>
+      <rules />
+   </element>
+
+   <element name="Wolf Shape" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_WOLF_SHAPE">
+      <supports>Vampiric Bloodline</supports>
+      <description>
+         <p>You can transform into a large wolf as a Bonus Action. You can attack twice a turn using one bite and one claw.</p>
+         <p>Once you use this feature, you must finish a short or long rest before you can use it again. At 5th level, you get 2 uses before needing a short rest. At 10th level, you get 3 uses before needing a short rest and the duration increases to 2 minutes. At 15th level, you get 4 uses before needing a short rest. At 20th level, you get 5 uses before needing a short rest and the duration increases to 4 minutes.</p>
+         <br></br>
+         <table>
+            <thead>
+               <tr>
+                  <td>----Weapon----</td>
+                  <td>----Attack Bonus----</td>
+                  <td>----Damage----</td>
+               </tr>
+            </thead>
+            <tr>
+               <td>-------Bite-------</td>
+               <td>------------+5-----------</td>
+               <td>-----2d8+5------</td>
+            </tr>
+            <tr>
+               <td>-------Claw------</td>
+               <td>------------+3-----------</td>
+               <td>-----2d6+3------</td>
+            </tr>
+         </table>
+      </description>
+      <sheet alt="Wolf Shape">
+         <description action="Bonus Action/1 Minute" usage="1/Short Rest" level="1">You can transform into a large wolf. You can attack twice a turn using one bite and one claw. Bite does +5 to AC dealing 2d8+5. Claw does +3 to AC dealing 2d6+3.</description>
+         <description action="Bonus Action/1 Minute" usage="2/Short Rest" level="5">You can transform into a large wolf. You can attack twice a turn using one bite and one claw. Bite does +5 to AC dealing 2d8+5. Claw does +3 to AC dealing 2d6+3.</description>
+         <description action="Bonus Action/2 Minutes" usage="3/Short Rest" level="10">You can transform into a large wolf. You can attack twice a turn using one bite and one claw. Bite does +5 to AC dealing 2d8+5. Claw does +3 to AC dealing 2d6+3.</description>
+         <description action="Bonus Action/2 Minutes" usage="4/Short Rest" level="15">You can transform into a large wolf. You can attack twice a turn using one bite and one claw. Bite does +5 to AC dealing 2d8+5. Claw does +3 to AC dealing 2d6+3.</description>
+         <description action="Bonus Action/4 Minutes" usage="5/Short Rest" level="20">You can transform into a large wolf. You can attack twice a turn using one bite and one claw. Bite does +5 to AC dealing 2d8+5. Claw does +3 to AC dealing 2d6+3.</description>
+      </sheet>
+      <rules />
+   </element>
+
+   <element name="Vampiric Resistance" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_VAMPIRIC_RESISTANCE">
+      <supports>Vampiric Bloodline</supports>
+      <description>
+         <p>You have resistance to bludgeoning and necrotic damage.</p>
+      </description>
+      <sheet alt="Vampiric Resistance">
+         <description>You have resistance to bludgeoning and necrotic damage.</description>
+      </sheet>
+      <rules>
+         <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+         <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+      </rules>
+   </element>
+
+   <element name="Unnatural Charm" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRIC_BLOODLINE_UNNATURAL_CHARM">
+      <supports>Vampiric Bloodline</supports>
+      <description>
+         <p>As an action, you can target one humanoid you can see within 30 feet. The target must succeed a Wisdom saving throw, or be charmed. The DC for the save is equal to 8 + your proficiency bonus + your Charisma modifier. The charmed target regards you as a trusted friend to be heeded and protected. Although the target isn't under your direct control, it takes your requests or actions in the most favorable way it can.</p>
+         <p>Each time you or one of your companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 1 hour, until you are destroyed, until you on a different plane of existence than the target, or if you take a bonus action to end the effect. You can only have one creature charmed this way at once and you can use this trait a number of times equal to your Charisma modifier before you must complete a long rest before using it again.</p>
+      </description>
+      <sheet alt="Unnatural Charm">
+         <description>As an action, you can charm one humanoid you can see within 30 feet. The target must succeed a Wisdom saving throw DC {{unnatural-charm:dc}}</description>
+      </sheet>
+      <rules>
+         <stat name="unnatural-charm:dc" value="8" />
+         <stat name="unnatural-charm:dc" value="charisma:modifier" />
+         <stat name="unnatural-charm:dc" value="proficiency" />
+      </rules>
+   </element>
+
+
+   <!-- Racial Trait -->
+   <element name="Extra Language" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_EXTRA_LANGUAGE">
+      <description>
+         <p>You can speak, read, and write one extra language of your choice.</p>
+      </description>
+      <sheet display="false" />
+      <rules>
+         <select type="Language" name="Language (Vampire)" supports="Starting" />
+      </rules>
+   </element>
+
+   <!-- Languages -->
+   <element name="Vampire" type="Language" source="DM Houserules" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE">
+      <description>
+         <p>The language of the Vampire race.</p>
+      </description>
+      <setters>
+         <set name="Speakers">Vampire</set>
+         <set name="Script">Vampire</set>
+         <set name="Exotic">true</set>
+      </setters>
+   </element>
 </elements>

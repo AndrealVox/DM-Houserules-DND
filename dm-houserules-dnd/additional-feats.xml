@@ -1,44 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    
-    <info>
-		<name>Extra Options</name>
-		<description>Extra Options</description>
-		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.5">
-			<file name="additional-feats.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
-		</update>
-	</info>
-    
-    <!-- appends -->
-    <append id="ID_RACE_DRAGONBORN">
-        <rules>
-            <grant type="Vision" id="ID_VISION_DARKVISION" />
-            <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
-			<grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
-        </rules>
-    </append>
-    
-	<!-- options -->
-	<element name="Extra Options" type="Option" source="DM Houserules" id="ID_DM_HOUSERULES_EXTRA_OPTION">
-		<description>Some DMs may allow the use of extra options. Check this if your DM does.</description>
-		<sheet display="false" />
-        <setters>
-			<set name="default">true</set>
-		</setters>
-        <rules>
-            <select type="Feat" name="Free Feat (Level 5)" level="5" />
-			<select type="Feat" name="Free Feat (Level 10)" level="10" />
-			<select type="Feat" name="Free Feat (Level 15)" level="15" />
-			<select type="Feat" name="Free Feat (Level 20)" level="20" />
-        </rules>
-	</element>
-    
-    <!-- feats -->
-    <!-- <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_SPROUTED_WINGS">
+
+   <info>
+      <name>Extra Options</name>
+      <description>Extra Options</description>
+      <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
+      <update version="0.7">
+         <file name="additional-feats.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
+      </update>
+   </info>
+
+   <!-- options -->
+   <element name="Extra Options" type="Option" source="DM Houserules" id="ID_DM_HOUSERULES_EXTRA_OPTION">
+      <description>Some DMs may allow the use of extra options. Check this if your DM does.</description>
+      <sheet display="false" />
+      <setters>
+         <set name="default">true</set>
+      </setters>
+      <rules>
+         <select type="Feat" name="Free Feat (Level 5)" level="5" />
+         <select type="Feat" name="Free Feat (Level 10)" level="10" />
+         <select type="Feat" name="Free Feat (Level 15)" level="15" />
+         <select type="Feat" name="Free Feat (Level 20)" level="20" />
+      </rules>
+   </element>
+
+   <!-- appends -->
+   <!-- append id="ID_RACE_DRAGONBORN">
+      <rules>
+         <grant type="Vision" id="ID_VISION_DARKVISION" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE" />
+         <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
+      </rules>
+   </append -->
+
+   <!-- feats -->
+   <!-- <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_SPROUTED_WINGS">
         <prerequisite>Strength 13 or higher</prerequisite>
 		<requirements>([str:13])</requirements>
 		<description>
@@ -93,27 +90,31 @@
             <stat name="intelligence:score:set" value="19" bonus="base" />
         </rules>
     </element> -->
-    
-    <!-- dragon racial traits -->
-    <element name="Dragons Fire" type="Racial Trait" source="Player’s Handbook" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE">
-        <description>
-            <p>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</p>
-        </description>
-        <sheet>
-            <description>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</description>
-        </sheet>
-        <rules />
-    </element>
-    
-    <element name="Dragon Senses" type="Racial Trait" source="Player’s Handbook" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE">
-        <description>
-            <p>Your draconic bloodline has heightened your senses making you more alert to your surroundings and giving you an inate ability to talk to creatures.</p>
-            <ul>
-                <li>You gain proficiency in Insight, Perception and Persuasion.</li>
-            </ul>
-        </description>        
-        <sheet display="false" />
-        <rules />
-    </element>
-    
+
+   <!-- dragon racial traits -->
+   <!-- element name="Dragons Fire" type="Racial Trait" source="Player’s Handbook" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE">
+      <description>
+         <p>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</p>
+      </description>
+      <sheet>
+         <description>If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire.</description>
+      </sheet>
+      <rules />
+   </element>
+
+   <element name="Dragon Senses" type="Racial Trait" source="Player’s Handbook" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE">
+      <description>
+         <p>Your draconic bloodline has heightened your senses making you more alert to your surroundings and giving you an inate ability to talk to creatures.</p>
+         <ul>
+            <li>You gain proficiency in Insight, Perception and Persuasion.</li>
+         </ul>
+      </description>
+      <sheet display="false" />
+      <rules>
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+      </rules>
+   </element -->
+
 </elements>

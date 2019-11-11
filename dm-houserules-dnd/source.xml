@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	
-    <info>
-		<name>DM Houserules</name>
-		<author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-		<update version="0.5">
-			<file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/source.xml" />
-		</update>
-	</info>
-	
-    <element name="DM Houserules" type="Source" source="DM Houserules" id="ID_DM_HOUSERULES_SOURCE">
-		<description>
-			<![CDATA[<p>Includes additional feats along with the ability to grant a free feat for your characters at certain levels.</p>]]>
-		</description>
-		<setters>
-			<set name="abbreviation">DMHR</set>
-			<set name="url">https://github.com/AndrealVox/DM-Houserules-DND</set>
-			<set name="image">https://cdn.discordapp.com/attachments/362716587142283265/638006847550259210/ANDREAL_VOX.jpg</set>
-			<set name="author" abbreviation="AV" url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</set>
-			<set name="homebrew">true</set>
-		</setters>
-	</element>
-    
+
+   <info>
+      <name>DM Houserules</name>
+      <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
+      <update version="0.7">
+         <file name="source.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/source.xml" />
+      </update>
+   </info>
+
+   <element name="DM Houserules" type="Source" source="DM Houserules" id="ID_DM_HOUSERULES_SOURCE">
+      <description>
+         <![CDATA[<p>Includes additional feats along with the ability to grant a free feat for your characters at certain levels.</p>]]>
+      </description>
+      <setters>
+         <set name="abbreviation">DMHR</set>
+         <set name="url">https://github.com/AndrealVox/DM-Houserules-DND</set>
+         <set name="image">https://cdn.discordapp.com/attachments/362716587142283265/638006847550259210/ANDREAL_VOX.jpg</set>
+         <set name="author" abbreviation="AV" url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</set>
+         <set name="homebrew">true</set>
+      </setters>
+   </element>
+
 </elements>
