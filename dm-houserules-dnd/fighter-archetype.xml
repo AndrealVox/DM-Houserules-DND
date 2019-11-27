@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+   <info>
+      <name>Additional Fighter Archetype</name>
+      <description>Additional Fighter Archetype</description>
+      <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
+      <update version="0.8">
+         <file name="fighter-archetype.xml" url="BLANK" />
+      </update>
+   </info>
+
+   <!-- Mystic Fighter Martial Archetype -->
+   <element name="Mystic Fighter" type="Archetype" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_MYSTIC_FIGHTER">
+      <supports>Martial Archetype</supports>
+      <description>
+         <p>As an archetypal Mystic Fighter, you have superiority over your enemies. Your mystic mind has enlightened you to the world around.</p>
+         <div element="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" />
+         <div element="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_COMBAT_SUPERIORITY" />
+         <div element="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_FIGHTERS_MYSTICISM" />
+         <div element="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_MONSTER_SLAYER" />
+         <div element="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_IMPROVED_COMBAT_SUPERIORITY" />
+         <div element="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_RELENTLESS" />
+      </description>
+      <sheet>
+         <description>As an archetypal Mystic Fighter, you have superiority over your enemies. Your mystic mind has enlightened you to the world around.</description>
+      </sheet>
+      <rules>
+         <grant type="Archetype Feature" name="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" level="3" />
+         <grant type="Archetype Feature" name="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_COMBAT_SUPERIORITY" level="3" />
+         <grant type="Archetype Feature" name="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_FIGHTERS_MYSTICISM" level="3" />
+         <grant type="Archetype Feature" name="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_MONSTER_SLAYER" level="7" />
+         <grant type="Archetype Feature" name="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_IMPROVED_COMBAT_SUPERIORITY" level="10" />
+         <grant type="Archetype Feature" name="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_RELENTLESS" level="15" />
+      </rules>
+   </element>
+
+   <element name="Bonus Proficiencies" type="Archetype Feature" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES">
+      <description>
+         <p>When you choose this archetype at 3rd level, you gain proficiency in Insight and Investigation. You can gain expertise with a skill that you have proficiency.</p>
+      </description>
+      <sheet display="false" />
+      <rules>
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+         <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+         <select type="Class Feature" name="Expertise (Mystic Fighter)" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+      </rules>
+   </element>
+   <element name="Combat Superiority" type="Archetype Feature" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_COMBAT_SUPERIORITY">
+      <description>
+         <p>At 3rd level, you gain a set of abilities that are fueled by special dice called superiority dice.</p>
+         <p>
+            <span class="feature">Superiority Dice.</span> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.<br />
+            <p class="indent">You gain another superiority die at 7th level and one more at 15th level.</p>
+            <span class="feature">Using Superiority Dice.</span> You can expend superiority dice to gain a number of different benefits:<br />
+         </p>
+         <ul>
+            <li>When you make a weapon attack against a creature, you can expend one superiority die to add it to the attack roll. You can use this ability before or after making the attack roll.</li>
+            <li>When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability before or after rolling damage.</li>
+            <li>When you make a Perception or Insight check, you can expend one superiority die to add it to the roll. You can use this ability before or after seeing the total but before learning if you succeeded or failed.</li>
+         </ul>
+      </description>
+      <sheet>
+         <description>You have {{superiority dice:amount}}d{{superiority dice:size}}s superiority dice. You can expend them to choose between following effects: Roll a superiority die and add the number to an attack roll. Or, roll a superiority die and add it to a weapons' damage roll. Or, roll a superiority die and add it to the number of a perception or insight check.</description>
+      </sheet>
+      <rules>
+         <stat name="superiority dice:amount" value="4" />
+         <stat name="superiority dice:amount" value="1" level="7" />
+         <stat name="superiority dice:amount" value="1" level="15" />
+         <stat name="superiority dice:size" value="8" bonus="size" />
+      </rules>
+   </element>
+   <element name="Fighter's Mysticism" type="Archetype Feature" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_FIGHTERS_MYSTICISM">
+      <description>
+         <p>At 3rd level, your mystic mind has enlightened you to the world around and gives you a limited ability to use magic. You can cast detect magic and pass without a trace as a cantrip. In addition, you gain the ability to speak one of the following languages of your choice: Abyssal, Celestial, or Infernal.</p>
+      </description>
+      <sheet>
+         <description>You can cast detect magic and pass without a trace as a cantrip.</description>
+      </sheet>
+      <rules>
+         <select type="Language" name="Language (Mystic Fighter)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_CELESTIAL|ID_LANGUAGE_INFERNAL" number="1" />
+         <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+         <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
+      </rules>
+   </element>
+   <element name="Monster Slayer" type="Archetype Feature" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_MONSTER_SLAYER">
+      <description>
+         <p>At 7th level, whenever you expend superiority dice to add to a damage roll, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal.</p>
+      </description>
+      <sheet>
+         <description>Can roll 2 superiority dice instead of 1 when adding to a damage roll.</description>
+      </sheet>
+      <rules />
+   </element>
+   <element name="Improved Combat Superiority" type="Archetype Feature" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_IMPROVED_COMBAT_SUPERIORITY">
+      <description>
+         <p>At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s.</p>
+      </description>
+      <sheet display="false" />
+      <rules>
+         <stat name="superiority dice:size" value="10" level="10" bonus="size" />
+         <stat name="superiority dice:size" value="12" level="18" bonus="size" />
+      </rules>
+   </element>
+   <element name="Relentless" type="Archetype Feature" source="DM Houserules" id="ID_DM_HOUSERULES_FIGHTER_ARCHETYPE_FEATURE_RELENTLESS">
+      <description>
+         <p>Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</p>
+      </description>
+      <sheet>
+         <description>When rolling initiative without any superiority dice, regain 1.</description>
+      </sheet>
+      <rules />
+   </element>
+</elements>

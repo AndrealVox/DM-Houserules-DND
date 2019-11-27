@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.7">
+		<update version="0.8">
 			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd.index" />
 		</update>
 	</info>
@@ -11,6 +11,7 @@
 	
 		<!-- misc -->
 		<file name="additional-feats.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
+		<file name="fighter-archetype.xml" url="BLANK" />
 	
 		<!-- races -->
 		<file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
