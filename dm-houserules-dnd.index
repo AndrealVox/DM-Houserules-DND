@@ -11,7 +11,7 @@
 	
 		<!-- misc -->
 		<file name="additional-feats.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/additional-feats.xml" />
-		<file name="fighter-archetype.xml" url="BLANK" />
+		<file name="fighter-archetype.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/fighter-archetype.xml" />
 	
 		<!-- races -->
 		<file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
