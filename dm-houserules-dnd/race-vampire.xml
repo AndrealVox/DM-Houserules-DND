@@ -4,7 +4,7 @@
       <name>Vampire</name>
       <description>Vampire</description>
       <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-      <update version="0.8">
+      <update version="0.9">
          <file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
       </update>
    </info>
@@ -114,15 +114,15 @@
       <supports>Vampire Subrace</supports>
       <requirements />
       <description>
-         <p>Vampire Socialites are known to have higher charisma and wisdom than their more healthy and dexterious counter parts</p>
+         <p>Vampire Socialites are known to have higher charisma and wisdom than their more stronger and dexterious counter parts</p>
          <p class="indent"><b><i>Ability Score Increase. </i></b>Your Charisma and Wisdom scores increase by 2.</p>
-         <p class="indent"><b><i>Ability Score Decrease. </i></b>Your Constitution and Dexterity scores decrease by 4.</p>
+         <p class="indent"><b><i>Ability Score Decrease. </i></b>Your Strength and Dexterity scores decrease by 4.</p>
       </description>
       <sheet display="false" />
       <rules>
          <stat name="charisma" value="2" />
          <stat name="wisdom" value="2" />
-         <stat name="constitution" value="-4" />
+         <stat name="strength" value="-4" />
          <stat name="dexterity" value="-4" />
       </rules>
    </element>
@@ -153,7 +153,7 @@
          <p>You can use your vampiric reflexes to dodge attacks and move with an unearthly grace and ease, gaining the following benefits: </p>
          <ul>
             <li>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
-            <li>While you are wearing not armor, your Armor Class equals 12 + your Dexterity modifier.</li>
+            <li>While you are wearing not armor, your Armor Class equals 12 + your Dexterity and Constitution modifiers.</li>
          </ul>
       </description>
       <sheet alt="Superior Body">
@@ -162,9 +162,11 @@
       <rules>
          <stat name="ac:unarmored-defense-vampire:base" value="12" />
          <stat name="ac:unarmored-defense-vampire:dexterity" value="dexterity:modifier" />
+         <stat name="ac:unarmored-defense-vampire:constitution" value="constitution:modifier" />
 
          <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:base" />
          <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:dexterity" />
+         <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:constitution" />
 
          <stat name="ac:calculation" value="ac:unarmored-defense-vampire" bonus="calculation" equipped="[armor:none]" alt="Superior Body (Vampire)" />
       </rules>
