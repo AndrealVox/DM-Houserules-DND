@@ -10,22 +10,6 @@
       </update>
    </info>
 
-   <!-- options -->
-   <element name="Extra Options" type="Option" source="DM Houserules" id="ID_DM_HOUSERULES_EXTRA_OPTION">
-      <description>Some DMs may allow the use of extra options. Check this if your DM does.</description>
-      <sheet display="false" />
-      <setters>
-         <set name="default">true</set>
-      </setters>
-      <rules>
-         <select type="Feat" name="Free Feat (Level 1)" level="1" />
-         <select type="Feat" name="Free Feat (Level 5)" level="5" />
-         <select type="Feat" name="Free Feat (Level 10)" level="10" />
-         <select type="Feat" name="Free Feat (Level 15)" level="15" />
-         <select type="Feat" name="Free Feat (Level 20)" level="20" />
-      </rules>
-   </element>
-
    <!-- Deities -->
    <element name="Andreal Vox" type="Deity" source="DM Houserules" id="ID_DM_HOUSERULES_DEITY_ANDREALVOX">
       <description>
@@ -55,14 +39,112 @@
       </rules>
    </element>
 
+   <!-- weapons -->
+   <!-- martial -->
+   <element name="Critical 19" type="Weapon Property" source="DM Houserules" id="ID_DM_HOUSERULES_WEAPON_PROPERTY_CRITICAL19">
+      <description>
+         <p>Critical weapons are especially effective at targeting the weak spots of an enemy. If you roll 19 or 20 on an attack roll with a critical weapon the attack is considered a critical hit.</p>
+      </description>
+   </element>
+
+   <element name="Weapon Proficiency (Katana)" type="Proficiency" source="DM Houserules" id="ID_DM_HOUSERULES_WEAPON_PROFICIENCY_KATANA">
+      <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_DM_HOUSERULES_WEAPON_PROPERTY_CRITICAL19</supports>
+   </element>
+
+   <element name="Katana" type="Weapon" source="DM Houserules" id="ID_DM_HOUSERULES_WEAPON_KATANA">
+      <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_DM_HOUSERULES_WEAPON_PROPERTY_CRITICAL19, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+      <description>
+         <p></p>
+      </description>
+      <setters>
+         <set name="category">Weapons</set>
+         <set name="cost" currency="gp">50</set>
+         <set name="weight" lb="3">3 lb.</set>
+         <set name="slot">onehand</set>
+         <set name="damage" type="slashing">1d8</set>
+         <set name="versatile">1d10</set>
+         <set name="proficiency">ID_DM_HOUSERULES_WEAPON_PROFICIENCY_KATANA</set>
+      </setters>
+   </element>
+
+   <!-- spells -->
+   <element name="Orb of Water" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_ORB">
+      <supports>Sorcerer, Wizard, Artificer</supports>
+      <description>
+         <p>You hurl an orb of water at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 cold damage. An object on fire hit by this spell extinquishes the flames.</p>
+         <p class="indent">This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">0</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">120 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Water Whip" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_WHIP">
+      <supports>Sorcerer, Wizard, Warlock</supports>
+      <description>
+         <p>You create a lash of water that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then takes 1d8 cold damage regardless of succes.</p>
+         <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">0</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">30 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">false</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Holy Water" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_HOLY_WATER">
+      <supports>Cleric</supports>
+      <description>
+         <p>Holy water rains upon a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 cold damage. The target gains no benefit from cover for this saving throw. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">0</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">60 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
    <!-- appends -->
+   <append id="ID_WOTC_PHB_CLASS_MONK">
+      <rules>
+         <grant type="Proficiency" id="ID_DM_HOUSERULES_WEAPON_PROFICIENCY_KATANA" requirements="!ID_WOTC_PHB_MULTICLASS_MONK" />
+      </rules>
+   </append>
    <!-- append id="ID_RACE_DRAGONBORN">
       <rules>
          <grant type="Vision" id="ID_VISION_DARKVISION" />
          <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_SENSE" />
          <grant type="Racial Trait" id="ID_DM_HOUSERULES_RACIAL_TRAIT_DRAGON_FIRE" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
-      </rules>
-   </append -->
+      </rules -->
 
    <!-- feats -->
    <!-- <element name="Sprouted Wings" type="Feat" source="DM Houserules" id="ID_DM_HOUSERULES_FEAT_SPROUTED_WINGS">
