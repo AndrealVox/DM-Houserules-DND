@@ -68,10 +68,10 @@
    </element>
 
    <!-- spells -->
-   <element name="Orb of Water" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_ORB">
+   <element name="Orb of Water(Fire Bolt)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_ORB">
       <supports>Sorcerer, Wizard, Artificer</supports>
       <description>
-         <p>You hurl an orb of water at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 cold damage. An object on fire hit by this spell extinquishes the flames.</p>
+         <p>You hurl an orb of water at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 cold damage. An object on fire hit by this spell extinguishes if it isn’t being worn or carried.</p>
          <p class="indent">This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
       </description>
       <setters>
@@ -90,10 +90,10 @@
       </setters>
    </element>
 
-   <element name="Water Whip" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_WHIP">
+   <element name="Water Whip(Lightning Lure)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_WHIP">
       <supports>Sorcerer, Wizard, Warlock</supports>
       <description>
-         <p>You create a lash of water that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then takes 1d8 cold damage regardless of succes.</p>
+         <p>You create a lash of water that strikes at one creature of your choice that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 cold damage and must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you.</p>
          <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
       </description>
       <setters>
@@ -112,7 +112,7 @@
       </setters>
    </element>
 
-   <element name="Holy Water" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_HOLY_WATER">
+   <element name="Holy Water(Sacred Flame)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_HOLY_WATER">
       <supports>Cleric</supports>
       <description>
          <p>Holy water rains upon a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 cold damage. The target gains no benefit from cover for this saving throw. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
@@ -124,6 +124,95 @@
          <set name="time">1 action</set>
          <set name="duration">Instantaneous</set>
          <set name="range">60 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Icey Palms(Burning Hands)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_ICEY_PALMS">
+      <supports>Sorcerer, Wizard</supports>
+      <description>
+         <p>As you hold your hands with thumbs touching and fingers spread, a thin sheet of ice shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one.</p>
+         <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">1</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">Self (15-foot cone)</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Water Bomb(Fireball)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_BOMB">
+      <supports>Sorcerer, Wizard</supports>
+      <description>
+         <p>A bright blue streak flashes from your pointing finger to a point you choose within range and then bubbles with a low rumble into an eruption of icey cold water. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 cold damage on a failed save, or half as much damage on a successful one.</p>
+         <p>The water floods around corners. It extinguishes flammable objects in the area that aren’t being worn or carried.</p>
+         <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">3</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">150 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Holy Water Bath(Vitriolic Sphere)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_HOLY_WATER_BATH">
+      <supports>Sorcerer, Wizard, Fighter (Eldritch Knight)</supports>
+      <description>
+         <p>You point at a location within range, and a glowing 1-foot ball of aquamarine water streaks there and explodes in a 20-foot radius sphere. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 cold damage and another 5d4 cold damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.</p>
+         <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th.</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">4</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">150 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Frozen Touch(Shocking Grasp)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_FROZEN_TOUCH">
+      <supports>Sorcerer, Wizard, Artificer</supports>
+      <description>
+         <p>Ice springs from your hand to deliver a chill to a creature you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 cold damage, and it can’t take reactions until the start of its next turn.</p>
+         <p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">0</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">Touch</set>
          <set name="hasVerbalComponent">true</set>
          <set name="hasSomaticComponent">true</set>
          <set name="hasMaterialComponent">false</set>
