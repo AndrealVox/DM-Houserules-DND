@@ -16,8 +16,8 @@
       <setters>
          <set name="abbreviation">DMHR</set>
          <set name="url">https://github.com/AndrealVox/DM-Houserules-DND</set>
-         <set name="image">https://cdn.discordapp.com/attachments/362716587142283265/638006847550259210/ANDREAL_VOX.jpg</set>
-         <set name="author" abbreviation="AV" url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</set>
+         <set name="image">https://cdn.discordapp.com/attachments/248252326408617984/672926377040674845/dnd.jpg</set>
+         <set name="author" abbreviation="AV" url="https://www.instagram.com/andreal_vox/">Andreal_Vox</set>
          <set name="homebrew">true</set>
       </setters>
    </element>

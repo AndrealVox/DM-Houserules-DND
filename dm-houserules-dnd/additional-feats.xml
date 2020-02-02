@@ -68,6 +68,28 @@
    </element>
 
    <!-- spells -->
+   <element name="Frozen Touch(Shocking Grasp)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_FROZEN_TOUCH">
+      <supports>Sorcerer, Wizard, Artificer</supports>
+      <description>
+         <p>Ice springs from your hand to deliver a chill to a creature you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 cold damage, and it can’t take reactions until the start of its next turn.</p>
+         <p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">0</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">Touch</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
    <element name="Orb of Water(Fire Bolt)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_ORB">
       <supports>Sorcerer, Wizard, Artificer</supports>
       <description>
@@ -200,19 +222,63 @@
       </setters>
    </element>
 
-   <element name="Frozen Touch(Shocking Grasp)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_FROZEN_TOUCH">
-      <supports>Sorcerer, Wizard, Artificer</supports>
+   <element name="Wall of Frost(Wall of Fire)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WALL_OF_FROST">
+      <supports>Druid, Sorcerer, Wizard</supports>
       <description>
-         <p>Ice springs from your hand to deliver a chill to a creature you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 cold damage, and it can’t take reactions until the start of its next turn.</p>
-         <p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+         <p>You create a wall of frost on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot think, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot think. The wall is opaque and lasts for the duration.</p>
+         <p class="indent">When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 cold damage, or half as much damage on a successful save.</p>
+         <p class="indent">A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there.</p>
+         <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
       </description>
       <setters>
          <set name="keywords">cold</set>
-         <set name="level">0</set>
+         <set name="level">4</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Concentration, up to 1 minute</set>
+         <set name="range">120 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">true</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Water Storm(Fire Storm)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_WATER_STORM">
+      <supports>Cleric, Druid, Sorcerer</supports>
+      <description>
+         <p>A storm made up of sheets of swirling water appears in a location you choose within range. The area of the storm consists of up to 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make Dexterity saving throw. It takes 7d10 cold damage on a failed save, or half as much damage on a successful one.</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">7</set>
          <set name="school">Evocation</set>
          <set name="time">1 action</set>
          <set name="duration">Instantaneous</set>
-         <set name="range">Touch</set>
+         <set name="range">150 feet</set>
+         <set name="hasVerbalComponent">true</set>
+         <set name="hasSomaticComponent">true</set>
+         <set name="hasMaterialComponent">false</set>
+         <set name="materialComponent" />
+         <set name="isConcentration">false</set>
+         <set name="isRitual">false</set>
+      </setters>
+   </element>
+
+   <element name="Bubble Mask(Sunburst)" type="Spell" source="DM Houserules" id="ID_DM_HOUSERULES_SPELL_BUBBLE_MASK">
+      <supports>Druid, Sorcerer, Wizard</supports>
+      <description>
+         <p>Bubbles of water appear in a 60-foot radius centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes 12d6 cold damage.</p>
+      </description>
+      <setters>
+         <set name="keywords">cold</set>
+         <set name="level">8</set>
+         <set name="school">Evocation</set>
+         <set name="time">1 action</set>
+         <set name="duration">Instantaneous</set>
+         <set name="range">150 feet</set>
          <set name="hasVerbalComponent">true</set>
          <set name="hasSomaticComponent">true</set>
          <set name="hasMaterialComponent">false</set>
