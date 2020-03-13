@@ -4,7 +4,7 @@
       <name>Vampire</name>
       <description>Vampire</description>
       <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-      <update version="0.10">
+      <update version="0.11">
          <file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
       </update>
    </info>

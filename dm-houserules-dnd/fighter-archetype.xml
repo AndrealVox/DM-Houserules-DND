@@ -4,7 +4,7 @@
       <name>Additional Fighter Archetype</name>
       <description>Additional Fighter Archetype</description>
       <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-      <update version="0.10">
+      <update version="0.11">
          <file name="fighter-archetype.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/fighter-archetype.xml" />
       </update>
    </info>
