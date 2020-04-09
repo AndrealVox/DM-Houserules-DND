@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
    <info>
-      <name>Vampire</name>
-      <description>Vampire</description>
+      <name>Sanguisuge</name>
+      <description>Sanguisuge</description>
       <author url="https://www.twitch.tv/Andreal_Vox">Andreal_Vox</author>
-      <update version="0.11">
+      <update version="0.12">
          <file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
       </update>
    </info>
 
-   <element name="Vampire" type="Race" source="DM Houserules" id="ID_DM_HOUSERULES_RACE_VAMPIRE">
+   <element name="Sanguisuge" type="Race" source="DM Houserules" id="ID_DM_HOUSERULES_RACE_VAMPIRE">
       <description>
          <p> Coming Soon... </p>
          <h4>COMING SOON...</h4>
@@ -17,17 +17,17 @@
          <p class="indent">Coming Soon...</p>
          <p class="indent">Coming Soon...</p>
          <h4>VAMPIRE TRAITS</h4>
-         <p>Your vampire character has the following traits.</p>
+         <p>Your sanguisuge character has the following traits.</p>
          <p class="indent"><b><i>Ability Score Increase. </i></b>Like the Human you came from only stronger, your ability scores each increase by 2.</p>
-         <p class="indent"><b><i>Age. </i></b>Vampires don’t mature and age in the same way that humans do. Every living vampire is either a Blood Lord, infected by "The Father" in the distant reaches of the past, was born from two Blood Lords or was spawned from a living human who was bitten. Most vampires are thus very old in years.</p>
-         <p class="indent"><b><i>Alignment. </i></b>Vampires have a strict hierarchy that incline them toward a lawful alignment. They may or may not become evil depending on how they chose to feed throughout their life.</p>
-         <p class="indent"><b><i>Size. </i></b>Vampire are about the same size and build as humans. Your size is Medium.</p>
+         <p class="indent"><b><i>Age. </i></b>Sanguisuges don’t mature and age in the same way that humans do. Every living sanguisuge is either a Blood Lord, infected by "The Father" in the distant reaches of the past, was born from two Blood Lords or was spawned from a living human who was bitten. Most sanguisuges are thus very old in years.</p>
+         <p class="indent"><b><i>Alignment. </i></b>Sanguisuges have a strict hierarchy that incline them toward a lawful alignment. They may or may not become evil depending on how they chose to feed throughout their life.</p>
+         <p class="indent"><b><i>Size. </i></b>Sanguisuges are about the same size and build as humans. Your size is Medium.</p>
          <p class="indent"><b><i>Speed. </i></b>Your swiftness grants you a base walking speed of 40 feet.</p>
          <p class="indent"><b><i>Vampiric Resistance. </i></b>You have resistance to slashing, bludgeoning and necrotic damage.</p>
          <p class="indent"><b><i>Superior Darkvision.</i></b>Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
-         <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Vampire and one extra language of your choice.</p>
+         <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Sanguisuge and one extra language of your choice.</p>
          <p class="indent"><b><i>Proficiencies. </i></b>You have proficiency in Persuasion and Stealth.</p>
-         <p class="indent"><b><i>Subrace. </i></b>There are a variety of vampires, some were bred specifically for certain jobs as others simply had the natural prowess.</p>
+         <p class="indent"><b><i>Subrace. </i></b>There are a variety of sanguisuges, some were bred specifically for certain jobs as others simply had the natural prowess.</p>
       </description>
       <sheet display="false" />
       <setters>
@@ -59,11 +59,11 @@
    </element>
 
    <!-- Sub Races -->
-   <element name="Vampire Brute" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_BRUTE">
-      <supports>Vampire Subrace</supports>
+   <element name="Sanguisuge Brute" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_BRUTE">
+      <supports>Sanguisuge Subrace</supports>
       <requirements />
       <description>
-         <p>Vampire Brutes are known to have higher strength and constitution than their more intelligent and wise counter parts</p>
+         <p>Sanguisuge Brutes are known to have higher strength and constitution than their more intelligent and wise counter parts</p>
          <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength and Constitution scores increase by 2.</p>
          <p class="indent"><b><i>Ability Score Decrease. </i></b>Your Intelligence and Wisdom scores decrease by 4.</p>
       </description>
@@ -76,11 +76,11 @@
       </rules>
    </element>
 
-   <element name="Vampire Scholar" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_SCHOLAR">
-      <supports>Vampire Subrace</supports>
+   <element name="Sanguisuge Scholar" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_SCHOLAR">
+      <supports>Sanguisuge Subrace</supports>
       <requirements />
       <description>
-         <p>Vampire Scholars are known to have higher intelligence and wisdom than their more stronger and charismatic counter parts</p>
+         <p>Sanguisuge Scholars are known to have higher intelligence and wisdom than their more stronger and charismatic counter parts</p>
          <p class="indent"><b><i>Ability Score Increase. </i></b>Your Intelligence and Wisdom scores increase by 2.</p>
          <p class="indent"><b><i>Ability Score Decrease. </i></b>Your Strength and Charisma scores decrease by 4.</p>
       </description>
@@ -93,11 +93,11 @@
       </rules>
    </element>
 
-   <element name="Vampire Larker" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_LARKER">
-      <supports>Vampire Subrace</supports>
+   <element name="Sanguisuge Larker" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_LARKER">
+      <supports>Sanguisuge Subrace</supports>
       <requirements />
       <description>
-         <p>Vampire Larkers are known to have higher dexterity and wisdom than their more stronger and intelligent counter parts</p>
+         <p>Sanguisuge Larkers are known to have higher dexterity and wisdom than their more stronger and intelligent counter parts</p>
          <p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity and Wisdom scores increase by 2.</p>
          <p class="indent"><b><i>Ability Score Decrease. </i></b>Your Strength and Intelligence scores decrease by 4.</p>
       </description>
@@ -110,11 +110,11 @@
       </rules>
    </element>
 
-   <element name="Vampire Socialite" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_SOCIALITE">
-      <supports>Vampire Subrace</supports>
+   <element name="Sanguisuge Socialite" type="Sub Race" source="DM Houserules" id="ID_DM_HOUSERULES_VAMPIRE_SUBRACE_SOCIALITE">
+      <supports>Sanguisuge Subrace</supports>
       <requirements />
       <description>
-         <p>Vampire Socialites are known to have higher charisma and wisdom than their more stronger and dexterious counter parts</p>
+         <p>Sanguisuge Socialites are known to have higher charisma and wisdom than their more stronger and dexterious counter parts</p>
          <p class="indent"><b><i>Ability Score Increase. </i></b>Your Charisma and Wisdom scores increase by 2.</p>
          <p class="indent"><b><i>Ability Score Decrease. </i></b>Your Strength and Dexterity scores decrease by 4.</p>
       </description>
@@ -168,7 +168,7 @@
          <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:dexterity" />
          <stat name="ac:unarmored-defense-vampire" value="ac:unarmored-defense-vampire:constitution" />
 
-         <stat name="ac:calculation" value="ac:unarmored-defense-vampire" bonus="calculation" equipped="[armor:none]" alt="Superior Body (Vampire)" />
+         <stat name="ac:calculation" value="ac:unarmored-defense-vampire" bonus="calculation" equipped="[armor:none]" alt="Superior Body (Sanguisuge)" />
       </rules>
    </element>
 
@@ -256,15 +256,15 @@
    </element>
 
    <!-- Racial Trait -->
-   <element name="Vampire Subrace" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRE_SUBRACE">
-      <supports>vampire</supports>
+   <element name="Sanguisuge Subrace" type="Racial Trait" source="DM Houserules" id="ID_DM_HOUSERULES_RACIAL_TRAIT_VAMPIRE_SUBRACE">
+      <supports>sanguisuge</supports>
       <requirements />
       <description>
-         <p>There are a variety of vampires, some were bred specifically for certain jobs as others simply had the natural prowess.</p>
+         <p>There are a variety of sanguisuges, some were bred specifically for certain jobs as others simply had the natural prowess.</p>
       </description>
       <sheet display="false" />
       <rules>
-         <select type="Sub Race" name="Vampire Subrace" supports="Vampire Subrace" />
+         <select type="Sub Race" name="Sanguisuge Subrace" supports="Sanguisuge Subrace" />
       </rules>
    </element>
 
@@ -274,18 +274,18 @@
       </description>
       <sheet display="false" />
       <rules>
-         <select type="Language" name="Language (Vampire)" />
+         <select type="Language" name="Language (Sanguisuge)" />
       </rules>
    </element>
 
    <!-- Languages -->
-   <element name="Vampire" type="Language" source="DM Houserules" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE">
+   <element name="Sanguisuge" type="Language" source="DM Houserules" id="ID_DM_HOUSERULES_LANGUAGE_VAMPIRE">
       <description>
-         <p>The language of the Vampire race.</p>
+         <p>The language of the Sanguisuge race.</p>
       </description>
       <setters>
-         <set name="Speakers">Vampire</set>
-         <set name="Script">Vampire</set>
+         <set name="Speakers">Sanguisuge</set>
+         <set name="Script">Sanguisuge</set>
          <set name="Exotic">true</set>
       </setters>
    </element>
