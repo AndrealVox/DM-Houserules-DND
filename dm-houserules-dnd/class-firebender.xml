@@ -107,8 +107,8 @@
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_DM_HOUSERULES_CLASS_FIRE_BENDER" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_DM_HOUSERULES_CLASS_FIRE_BENDER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_DM_HOUSERULES_CLASS_FIRE_BENDER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_DM_HOUSERULES_CLASS_FIRE_BENDER" />
 			<select type="Proficiency" name="Skill Proficiency (Fire Bender)" supports="Skill,Fire Bender" number="2" requirements="!ID_DM_HOUSERULES_CLASS_FIRE_BENDER" />
