@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.12">
+		<update version="0.13">
 			<file name="dm-houserules-dnd.index" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd.index" />
 		</update>
 	</info>
@@ -15,5 +15,8 @@
 	
 		<!-- races -->
 		<file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
+        
+		<!-- classes -->
+		<file name="class-firebender.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/class-firebender.xml" />
 	</files>
 </index>
