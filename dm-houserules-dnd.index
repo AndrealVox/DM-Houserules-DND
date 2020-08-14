@@ -15,6 +15,7 @@
 	
 		<!-- races -->
 		<file name="race-vampire.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-vampire.xml" />
+		<file name="race-human_variant.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/race-human_variant.xml" />
         
 		<!-- classes -->
 		<file name="class-firebender.xml" url="https://raw.githubusercontent.com/AndrealVox/DM-Houserules-DND/master/dm-houserules-dnd/class-firebender.xml" />
